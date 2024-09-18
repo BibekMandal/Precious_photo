@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(119, 117, 242, 0.345);
+    height: 5rem;
+    box-shadow: 0px 2px 5px black;
+}
+
+/* Navigation links styling */
+.left ul, .right ul {
+    display: flex;
+    list-style: none;
+}
+
+.left li, .right li {
+    margin: 1rem;
+}
+
+.left a, .right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+/* Nav-links container styling */
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Default direction for larger screens */
+}
+#first{
+    color: rgb(17, 17, 17);
+    font-size: 1.2rem;
+    border-bottom: 3px solid blue;
+}
+
+@media only screen and (max-width: 810px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack items in column */
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column; /* Stack items in column */
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0; /* Adjust margin for vertical spacing */
+    }
+
+    .nav-links a {
+        font-size: 1.5rem; /* Adjust font size for better readability on small screens */
+    }
+}
+
+/* About section styling */
+.about {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(bg9.jpg);
+    background-size: cover;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    bottom: 2rem;
+}
+
+.center h2 {
+    margin-top: 1rem;
+    font-weight: 900;
+}
+
+.about h1 span {
+    color: rgb(194, 11, 11);
+}
+
+div #quote {
+    font-family: "Poppins", sans-serif;
+    font-size: 5rem;
+    margin-left: 1.5rem;
+    line-height: 5rem;
+}
+
+.fa-heart {
+    color: rgb(255, 0, 0);
+    font-size: 5rem;
+}
+
+#quote-des {
+    margin-left: 1.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#footer-head {
+    color: rgb(233, 233, 233);
+    font-size: bolder;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: 3rem 0rem 0rem 5rem;
+}
+
+/* Social media icons styling */
+.fa-instagram {
+    position: relative;
+    top: 0.6rem;
+    left: 5rem;
+    font-size: 1.2rem;
+    color: rgb(38, 0, 255); 
+    transition: all 1s linear 0s;
+}
+
+.fa-instagram:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+.fa-facebook {
+    position: relative;
+    top: 0.6rem;
+    left: 7rem;
+    font-size: 1.2rem;
+    color: rgb(38, 0, 255);
+    transition: all 1s linear 0s;
+}
+
+.fa-facebook:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+.fa-linkedin {
+    position: relative;
+    top: 0.6rem;
+    font-size: 1.2rem;
+    left: 9rem;
+    color: rgb(38, 0, 255);
+    transition: all 1s linear 0s;
+}
+
+.fa-linkedin:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+.fa-phone-volume {
+    position: relative;
+    font-size: 1.2rem;
+    top: 0.6rem;
+    left: 11rem;
+    color: rgb(38, 0, 255);
+    transition: all 1s linear 0s;
+}
+
+.fa-phone-volume:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+/* Footer styling */
+h6 {
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0rem 0rem 0rem 20rem;
+}
+
+/* tablet view  */
+
+/* Styles for devices with a maximum width of 800px (e.g., tablets in portrait) */
+@media only screen and (max-width: 810px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .center h2
+    {
+        position: relative;
+        right: 14rem;
+    }
+    .about {
+        background-image: url(bg9.jpg);
+        background-size: cover;
+        height: 100%;
+        background-position: center; /* Ensure the background image is centered */
+    }
+    .about h1
+    {
+        font-size: 5rem;
+    }
+    #quote{
+        font-size: 2rem;
+        width: 10%;
+    }
+
+
+
+}
+
+
+
+
+/* MObile view  */
+
+/* Styles for devices with a maximum width of 545px */
+@media only screen and (max-width: 545px) {
+    .nav-links a {
+        font-size: 1rem;
+    }
+    .about h1{
+        font-size: 3.5rem;
+        position: relative;
+        margin-left: 5rem;
+        margin-bottom: 1rem;
+        top: 0.2rem;
+    }
+    div #quote{
+        font-size: 2rem;
+        line-height: 1.8rem;
+        flex-shrink: 1;
+        
+    }
+    div #quote-des{
+        width: 50%;
+        text-wrap: wrap;
+        font-size: 1rem;
+        word-wrap: break-word; /* Ensures long words or text wrap properly */
+        margin-left: 1.5rem; /* Adjust margin if needed */
+        margin-right: 1.5rem; /* Adjust margin if needed */
+    }
+    .fa-heart{
+        font-size: 2rem;
+    }
+   
+
+    .center h2 {
+        font-size: 1.5rem;
+        position: relative;
+        top: 0.5rem;
+        right: 6rem;
+    }
+
+    .about {
+        background-image: url(bg9.jpg);
+        background-size: cover;
+        background-position: center; /* Ensure the background image is centered */
+        height: 100%;
+    }
+
+
+    .fa-circle-play {
+        font-size: 4rem;
+    }
+
+    #logo-tag {
+        font-size: 3rem;
+    }
+
+    #text {
+        font-size: 1.2rem;
+    }
+
+    #last-btn {
+        width: 7rem;
+    }
+}

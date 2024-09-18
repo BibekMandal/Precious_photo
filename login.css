@@ -1,0 +1,301 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Contact page background */
+.login {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(bgc3.jpg);
+    background-size: cover;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(119, 117, 242, 0.345);
+    height: 5rem;
+    box-shadow: 0px 2px 5px black;
+}
+
+.left ul,
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.left li,
+.right li {
+    margin: 1rem;
+}
+
+.left a,
+.right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#first {
+    color: rgb(17, 17, 17);
+    font-size: 1.2rem;
+    border-bottom: 3px solid blue;
+}
+
+@media only screen and (max-width: 810px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Main content styling */
+.login h1 {
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    bottom: 0;
+}
+
+.login h1 span {
+    color: rgb(194, 11, 11);
+}
+
+
+/* Login Container Styles */
+.login-container {
+    width: 500px;
+    height: 480px;
+    padding: 20px;
+    background-color:rgba(216, 112, 147, 0.652);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 100, 0.3) 10px 50px 40px, rgba(0, 100, 200, 0.30) 0px 15px 12px;
+    text-align: center;
+    margin-top: 150px; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 10rem;
+    
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    
+
+}
+.login-container a{
+    position: relative;
+    left: 14rem;
+    top: 0.2rem;
+    text-decoration: none;
+}
+
+.login-container #radi{
+    position: relative;
+    right: 13.8rem;
+    top: 0.2rem;
+    font-size: 1rem;
+}
+#radi ,label{
+    position: relative;
+    right: 13rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #0a0a0a;
+    position: relative;
+    left: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 2.5rem;
+    border-radius: 10px;
+}
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: red;
+}
+.fa-brands{
+    position: relative;
+    top: 5rem;
+    font-size: 2rem;
+    margin-left: 3rem;
+    position: relative;
+    right: 1.8rem;
+}
+.fa-twitter{
+    color: rgb(17, 115, 243);
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-apple{
+    color: black;
+    font-size: 1.9;
+}
+
+
+/* Styles for devices with a maximum width of 800px (e.g., tablets in portrait) */
+@media only screen and (max-width: 810px) {
+    .item {
+        flex-direction: column;
+        align-items: center; /* Center items to avoid excessive white space */
+        padding: 1rem;
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .center h2
+    {
+        position: relative;
+        right: 15rem;
+    }
+    li{
+        margin: 0px;
+
+    }
+    .login {
+        background-image: url(bgc3.jpg);
+        background-size: cover;
+        background-position: center; /* Ensure the background image is centered */
+        height: 100%; /* Ensure the background image is centered */
+    }
+    .login h1{
+        
+        font-size: 7rem;
+    }
+}
+
+
+@media only screen and (max-width: 545px) {
+    .item {
+        flex-direction: column;
+        align-items: center; /* Center items to avoid excessive white space */
+        padding: 1rem;
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .center h2
+    {
+        position: relative;
+        right: 5rem;
+    }
+    li{
+        margin: 0px;
+
+    }
+    .login {
+        background-image: url(bgc3.jpg);
+        background-size: cover;
+        background-position: center; /* Ensure the background image is centered */
+        height: 100%; /* Ensure the background image is centered */
+    }
+    .login h1{
+        
+        font-size: 5rem;
+    }
+}
+
+

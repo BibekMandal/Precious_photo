@@ -1,0 +1,522 @@
+/* Resetting margins, padding, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main content styling */
+.main {
+   height: 100vh;
+    width: 100%;
+     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(bgc3.jpg);
+    background-size: cover;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(119, 117, 242, 0.345);
+    height: 5rem;
+    box-shadow: 0px 2px 5px black;
+}
+
+/* Navigation links styling */
+.left ul, .right ul {
+    display: flex;
+    list-style: none;
+}
+
+.left li, .right li {
+    margin: 1rem;
+}
+
+.left a, .right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+/* Nav-links container styling */
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Default direction for larger screens */
+}
+
+@media only screen and (max-width: 810px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack items in column */
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column; /* Stack items in column */
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0; /* Adjust margin for vertical spacing */
+    }
+
+    .nav-links a {
+        font-size: 1.5rem; /* Adjust font size for better readability on small screens */
+    }
+}
+
+/* Main content text and button styling */
+.main h1 {
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.main h1 span {
+    color: rgb(194, 11, 11);
+}
+
+div #rev {
+    rotate: -10deg;
+    font-size: 1.2rem;
+    margin: 1rem 0.25rem 0rem 8rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    bottom: 5rem;
+}
+
+div #rev span {
+    color: rgb(224, 8, 8);
+    font-size: 2.4rem;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+
+}
+
+div .rev2 {
+    font-size: 3rem;
+    margin: 7rem 0.25rem 0rem 8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.rev2 span {
+    color: grey;
+    font-size: 2.3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.rev2 img {
+    width: 10rem;
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+div #intro {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    color: black;
+    font-weight: 400;
+    margin: 0.7rem 0.25rem 0rem 8rem;
+}
+
+div #btn {
+    background-color: rgb(172, 63, 63);
+    margin: 1.2rem 0.25rem 0rem 8rem;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#footer-head {
+    color: rgb(233, 233, 233);
+    font-size: bolder;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: 3rem 0rem 0rem 5rem;
+}
+
+/* Social media icons styling */
+.fa-instagram {
+    position: relative;
+    top: 0.6rem;
+    left: 5rem;
+    font-size: 1.2rem;
+    color: rgb(38, 0, 255); 
+    transition: all 1s linear 0s;
+}
+
+.fa-instagram:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+.fa-facebook {
+    position: relative;
+    top: 0.6rem;
+    left: 7rem;
+    font-size: 1.2rem;
+    color: rgb(38, 0, 255);
+    transition: all 1s linear 0s;
+}
+
+.fa-facebook:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+.fa-linkedin {
+    position: relative;
+    top: 0.6rem;
+    font-size: 1.2rem;
+    left: 9rem;
+    color: rgb(38, 0, 255);
+    transition: all 1s linear 0s;
+}
+
+.fa-linkedin:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+.fa-phone-volume {
+    position: relative;
+    font-size: 1.2rem;
+    top: 0.6rem;
+    left: 11rem;
+    color: rgb(38, 0, 255);
+    transition: all 1s linear 0s;
+}
+
+.fa-phone-volume:hover {
+    color: rgb(169, 250, 6);
+    transform: translateY(-10px);
+}
+
+/* Footer styling */
+h6 {
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0rem 0rem 0rem 20rem;
+}
+
+#first{
+    color: rgb(17, 17, 17);
+    font-size: 1.2rem;
+    border-bottom: 3px solid blue;
+}
+
+/* Logo and tag styling */
+.logo {
+    height: 10rem;
+    width: 10rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0.5rem 0.25rem 1rem 1rem; 
+    position: relative;
+    right: 10rem;
+}
+
+.fa-circle-play {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 1.1rem;
+    left: 0rem;
+    font-size: 7rem;
+    transition: all 1s linear 0s;
+}
+
+.fa-circle-play:hover {
+    color: red;
+    transform: scale(1.2);
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: relative;
+    top: 1.5rem;
+    left: 0rem;
+}
+
+div #logo-tag {
+    font-size: 3rem;
+    position: relative;
+    right: 10rem;
+    font-weight: lighter;
+    font-family: "Playwrite BE WAL", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-size: 6rem;
+}
+
+#text {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    position: relative;
+    right: 8rem;
+    bottom: 1rem;
+}
+
+div #last-btn {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.293);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    position: relative;
+    right: 8rem;
+}
+
+/* Responsive styling for different screen sizes */
+
+/* tablet view  */
+
+/* Styles for devices with a maximum width of 800px (e.g., tablets in portrait) */
+@media only screen and (max-width: 810px) {
+    .item {
+        flex-direction: column;
+        align-items: center; /* Center items to avoid excessive white space */
+        padding: 1rem;
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .center h2
+    {
+        position: relative;
+        right: 14rem;
+    }
+    li{
+        margin: 0px;
+
+    }
+    #rev, #intro, #btn {
+        margin-left: 0; /* Reset margin for left alignment */
+        width: 100%; /* Adjust width to full width */
+    }
+    .main h1
+    {
+        font-size: 5rem;
+    }
+    #rev{
+        position: relative;
+        right: 6rem;
+    }
+
+    .rev2 {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        position: relative;
+        right: 6rem;
+    }
+
+    .rev2 img {
+        width: 6rem; /* Adjust image size for better fit */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 0.5rem; /* Space between text and image */
+    }
+
+    #intro {
+        margin-top: 1rem;
+        position: relative;
+        right: 6rem;
+    }
+
+    button#btn {
+        display: inline-block; /* Ensure button aligns properly */
+        position: relative;
+        right: 6rem;
+    }
+
+    #footer-head {
+        margin-top: 2rem; /* Add margin for separation */
+    }
+
+    footer {
+        text-align: center; /* Center footer links */
+        
+    }
+
+    h6 {
+        margin-top: 2rem; /* Add margin for separation */
+        text-align: center; /* Center the text */
+    }
+
+    .main {
+        background-image: url(bgc3.jpg);
+        background-size: cover;
+        height: 100%;
+        background-position: center; /* Ensure the background image is centered */
+    }
+}
+
+
+/* Mobile View  */
+
+/* Styles for devices with a maximum width of 480px (e.g., mobile portrait) */
+/* For use this 544 px can show this into 544 px */
+@media only screen and (max-width: 545px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .main h1 {
+        font-size: 9rem;
+    }
+
+    #rev {
+        position: relative;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .rev2 {
+        position: relative;
+        right: 1rem;
+        bottom: 2rem;
+    }
+
+    #intro {
+        position: relative;
+        right: 1rem;
+        bottom: 2rem;
+    }
+
+    .center h2 {
+        position: relative;
+        top: 0.5rem;
+        right: 0;
+        transform: translateX(0);
+        font-size: 1.5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .center h2
+    {
+        position: relative;
+        right: 5rem;
+    }
+
+    #rev{
+        position: relative;
+        right: 6rem;
+
+    }
+
+    .rev2{
+        position: relative;
+        right: 6rem;
+        top: 1rem;
+
+    }
+    #intro{
+        position: relative;
+        right: 6rem;
+        top: 1rem;
+
+    }
+    #btn{
+        position: relative;
+        right: 6rem;
+        top: 1rem;
+
+    }
+
+    .main {
+        background-image: url(bgc3.jpg);
+        background-size: cover;
+        height: 100%;
+        background-position: center; /* Ensure the background image is centered */
+        /* overflow: hidden; */
+    }
+
+    .logo {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .main h1 {
+        font-size: 3.5rem;
+        position: relative;
+        right: 0;
+        text-align: center;
+    }
+
+    .fa-circle-play {
+        font-size: 4rem;
+    }
+
+    #logo-tag {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #last-btn {
+        width: 7rem;
+        margin: 0 auto;
+        display: block;
+    }
+}

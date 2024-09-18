@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Dark bluish background for the body */
+    color: #e0e0e0; /* Light gray text color for better readability */
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #162447; /* Dark blue color for the sidebar */
+    color: #f0f0f0; /* Light text color for sidebar */
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #e0e0e0; /* Lighter color for the sidebar headings */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #e0e0e0; /* Light color for links */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #1f4068; /* Slightly lighter blue on hover */
+}
+
+.main {
+    flex: 1;
+    padding: 40px;
+    background-color: #1b1b2f; /* Darker bluish background for the main content */
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.main h1, .main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e0e0e0; /* Matching text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0; /* Consistent light text color */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #415a77; /* Border with a medium blue color */
+    border-radius: 3px;
+    background-color: #2e2e38; /* Dark background for input fields */
+    color: #e0e0e0; /* Light text color for input fields */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.form-group input[type="file"] {
+    display: none;
+}
+
+.form-group label[for="image"] {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #415a77;
+    background-color: #1b1b2f; /* Dark bluish background for file input label */
+    cursor: pointer;
+    color: #e0e0e0;
+}
+
+.form-group label[for="image"]:hover {
+    background-color: #2e2e38;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #0f3460; /* Deep blue color for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #53354a; /* Purple hue on hover for contrast */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1b1b2f;
+    color: #e0e0e0;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #415a77;
+}
+
+th {
+    background-color: #0f3460; /* Deep blue for table header */
+    color: #fff;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #1a936f; /* Green color for edit button */
+}
+
+.edit-btn:hover {
+    background-color: #16a085; /* Slightly different green on hover */
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Red for delete button */
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #162447; /* Matching sidebar color for footer */
+    color: #e0e0e0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin: 0;
+        border-radius: 0;
+    }
+}

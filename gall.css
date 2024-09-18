@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main content styling */
+.gallery {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(bgc3.jpg);
+    background-size: cover;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px black;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(119, 117, 242, 0.345);
+    height: 5rem;
+    box-shadow: 0px 2px 5px black;
+}
+
+/* Navigation links styling */
+.left ul,
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.left li,
+.right li {
+    margin: 1rem;
+}
+
+.left a,
+.right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+/* Nav-links container styling */
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* Default direction for larger screens */
+}
+
+@media only screen and (max-width: 810px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        /* Stack items in column */
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Show menu when active */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        /* Stack items in column */
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        /* Adjust margin for vertical spacing */
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+        /* Adjust font size for better readability on small screens */
+    }
+}
+
+/* Main content text and button styling */
+.gallery h1 {
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.gallery h1 span {
+    color: rgb(194, 11, 11);
+}
+div img {
+    height: 18rem;
+    width: 25rem;
+    border-radius: 2rem;
+}
+.gallo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.gallo img{
+    margin: 1rem;
+    padding: 1rem;
+}
+.gall-c{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+}
+.gall-c img{
+    height: 18rem;
+    width: 25rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: all 1s linear 0s;
+
+}
+.gall-c img:hover{
+   
+    rotate: 30deg;
+    
+}
+
