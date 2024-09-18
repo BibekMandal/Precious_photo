@@ -443,7 +443,7 @@ $result = $conn->query($sql);
             <div class="right nav-links">
                 <ul>
                     <li><a href="gallery1.php">Portfolio</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="contact-info.php">Contact Us</a></li>
                     <li><a href="gallery.php" id="first">Gallery</a></li>
                     <li><a href="login-info.php">Admin</a></li>
                 </ul>
