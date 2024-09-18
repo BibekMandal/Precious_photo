@@ -1,7 +1,7 @@
 <?php
 // Database connection
 $servername = "localhost";
-$username = "root";
+$username = "root"; 
 $password = "";
 $dbname = "precious_photography_db";
 
